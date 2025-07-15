@@ -1,9 +1,1 @@
-pip install pywin32
-import win32gui
-import win32con
-
-def create_window():
-    win32gui.MessageBox(0, "Привет, мир!", "Окно Win32", win32con.MB_OK)
-
-create_window()
-print("HEllo")
+print("Z")
