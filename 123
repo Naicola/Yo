@@ -1,1 +1,8 @@
-kvaza loh
+from PyQt5.QtWidgets import QApplication, QLabel, QWidget
+
+app = QApplication([])
+window = QWidget()
+window.setWindowTitle("Окно PyQt")
+label = QLabel("Привет, мир!", parent=window)
+window.show()
+app.exec_()
