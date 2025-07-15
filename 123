@@ -1,8 +1,8 @@
-from PyQt5.QtWidgets import QApplication, QLabel, QWidget
+from kivy.app import App
+from kivy.uix.label import Label
 
-app = QApplication([])
-window = QWidget()
-window.setWindowTitle("Окно PyQt")
-label = QLabel("Привет, мир!", parent=window)
-window.show()
-app.exec_()
+class MyApp(App):
+    def build(self):
+        return Label(text="Привет, мир!")
+
+MyApp().run()
